@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('=======obj1 = mobilefeature===========');
+        var mobile = new oppofeature();
+        mobile.name = 'oppo';
+        mobile.price = 10000;
+        mobile.ram = 16;
+        function oppofeature(){
+            return this.name;
+            return this.price;
+            return this.color;
+        }
+        console.log(mobile.name);
+        console.log(mobile.price);
+        console.log(mobile.ram);
+
+        console.log('=======obj2 = language===========');
+        var language = new skill();
+        language.name = 'kanadda';
+        language.name1 = 'english';
+        language.name2 = 'hindi';
+        function skill(){
+            return this.language;
+            return this.language;
+            return this.language;
+        }
+        console.log(language.name);
+        console.log(language.name1);
+        console.log(language.name2);
+
+        console.log('=======obj3 = motors===========');
+        var motors = new used();
+        motors.name = 'dc motor';
+        motors.use = 'fan';
+        motors.rpm = 15000;
+        function used(){
+            return this.motors;
+            return this.motors;
+            return this.motors;
+        }
+        console.log(motors.name);
+        console.log(motors.use);
+        console.log(motors.rpm);
+
+        console.log('=======obj4 = action===========');
+        var birds = new fly();
+        birds.name = 'piggin';
+        birds.color = 'white';
+        birds.price = 150;
+        function fly(){
+            return this.birds;
+            return this.birds;
+            return this.birds;
+        }
+        console.log(birds.name);
+        console.log(birds.color);
+        console.log(birds.price);
+
+        console.log('=======obj5 = company ===========');
+        var company = new com();
+        company.name = 'testyantra';
+        company.work = 'development testing';
+        company.location = 'bangalore';
+        function com(){
+            return this.company;
+            return this.company;
+            return this.company;
+        }
+        console.log(company.name);
+        console.log(company.work);
+        console.log(company.location);
+
+        </script>
+</body>
+</html>

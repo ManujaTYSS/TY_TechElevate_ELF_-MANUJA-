@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form validation</title>
+    <style>
+        body{
+            margin-left: 25%;
+            margin-right: 50%;
+        }
+    </style>
+</head>
+<body>
+    <legend>
+        <fieldset>
+           <form id = "myform" action="welcome.html" method="get"> 
+                <!-- //onsubmit="validateForm()"  try this -->
+<div>
+    <label for="">UserName</label>
+</div>
+<div>
+        <input onkeyup="validateForm()"  name="uname"  type="text" required> <br>
+        <!-- <span style="display:none">username is invalid</span>  -->
+        <small name="upass" class="text-danger" disabled>username is invalid</small>
+</div>
+<div>
+    <label for="">password</label>
+</div>
+<div>
+    <input onkeyup="validateForm()" name="password" type="password" required> <br>
+      <!-- <span id="" style="display: show" disabled>password is invalid</span>  -->
+      <small name="pass" disabled>password is invalid</small>
+</div>
+<br>
+<div>
+    <input type="submit"  name = "loginSubmit" value="Login" disabled>
+</div>
+           </form>
+        </fieldset>
+    </legend>
+  <script src="formvalidation1.js"></script>  
+</body>
+</html>

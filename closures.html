@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script> src ="./closure.js"</script>
+</head>
+<body>
+    
+    <script>
+    function sum(a,b){
+    function addsum(){
+        return a+b;
+    }
+    return addsum;
+}
+var addFunc = sum(10,20);
+var total = addFunc();
+console.log('Total ',total);
+// , it acts as concatination with one space
+console.log('=========================================');
+console.log(window);
+console.log(this);
+console.log(this===window);
+var name = 'manu';
+console.log(window.name);
+console.log(this.name);
+var person = {
+    name:'Dulquer salman',
+    age:30,
+    getName: function(){
+        console.log( 'getName method' +this);
+        console.log(window);
+        getDate();
+        function getDate(){
+            console.log('Get data method', this);
+        }
+        return this.name;
+    }
+}
+ var heroName = person.getName();
+ console.log('Name =' + heroName);
+ console.log('================ var keyword=========================');
+ for( var i = 0;i<5;i++){
+     console.log(i);
+ }
+ console.log("var keyword " +i);
+ console.log('=============== let keyword==========================');
+ for( let j = 0;j<5;j++){
+     console.log(j);
+ }
+//  console.log( "let keyword " +j);
+// let has block scope
+ console.log('=========================================');
+ var hobbies = ['dancing','coding','singing'];
+ console.log('hobbies ='+ hobbies);
+ var hobbies = ['numismtics'];
+ console.log('hobbies= '+ hobbies);
+ console.log('=========================================');
+ let fruits = ['mango','orange','apple'];
+ console.log('fruits ='+ fruits);
+   fruits = ['banana'];
+//   let fruits = ['banana'];  reinitialisation is possibel but redeclaration with or without initialisation is not possibel
+ console.log('fruits= '+ fruits);
+ console.log('============ const only modify no redeclaration and  no reinitialisation=============================');
+ const items = ['lipstick','kajal','deo','wallet'];
+ console.log(items);
+  items[2] = ['nail polish','powder'];
+ console.log(items);
+ console.log('=========================================');
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var library = [
+            {author:'Bill Gates',title:'The Road Ahead',bookId:1254},
+            {author:'Steve Jobs',title:'Walter Isaacson',bookId:4264},
+            {author:'manu',title:'life',bookId:7498}
+        ]
+        for(var i = 0;i<= library.length;i++)
+        {
+            console.log(library[i]);
+        }
+        // for(var i = 0;i<= library.length;i++)
+        // {
+            
+        //     console.log(library[i].author);
+        // }
+        console.log('---------------------------------------');
+        var hobbies = ['reading','coding','playing'];
+        for(var index in hobbies)
+        {
+            console.log('hobbies are ' + hobbies[index]);
+        }
+        console.log('---------------------------------------');
+        var person = {
+            name : 'manu',
+            age :21,
+        };
+        for(var i in person)
+        {
+            console.log(person[i]);
+        }
+        console.log('---------------------------------------');
+    
+        for(var value of  hobbies)
+        {
+            console.log('hobbies are ' + value);
+        }
+        console.log('---------------------------------------');
+        hobbies[3] = 'skipping';
+        hobbies[name] = 'juiping';
+        for(var index in hobbies)
+        {
+            console.log('hobbies are ' + hobbies[index]);
+        }
+        // it will also add addition element to array
+        console.log('---------------------------------------');
+        for(var value of  hobbies)
+        {
+            console.log('hobbies are ' + value);
+        }
+        // it will not add additional element to array
+        console.log('---------------------------------------');
+        console.log(hobbies);
+        
+        </script>
+</body>
+</html>

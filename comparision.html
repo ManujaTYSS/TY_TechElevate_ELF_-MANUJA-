@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = 10;
+        var name = 'my name';
+        var num2 = '10';
+        if(num1===num2)
+        {
+            // == compare only values irrespective of data type
+            // === compare both values as well as data types also
+            console.log("equal");
+        }
+        else 
+        {
+            console.log("not equal");
+        }
+        var a =10;
+        b = 'a';
+        if(a!==b)
+        {
+            console.log("true");
+        }
+        else 
+        {
+            console.log("false");
+        }
+        var equal = (num1===num2)?'true':'false';
+        console.log(equal);
+        var manu = (num1!==num2)?(num2===10)?'true':'false':'false';
+        console.log(manu);
+         var a=10;
+      var  num = (a>10)?'greater':(a===10)?'equal':'lesser';
+        console.log(num);
+        var myAge = 21;
+      console.log( "type of myage is " + typeof myAge) ;
+      var myname = 'manu';
+      console.log( "type of myname is " + typeof myname) ;
+      var hobbies = ['reading','coding','play'];
+      console.log( "type of habbies is " + typeof hobbies) ;
+    //   type of undefined is undefined and type of null is null
+    var isArray = Array.isArray(hobbies);
+    console.log(isArray);
+    
+        </script>
+</body>
+</html>

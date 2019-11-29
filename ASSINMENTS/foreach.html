@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+  var hobbies = ['singing','dancing','coding','skipping','jumping'];
+  hobbies.forEach(function(values,index){
+      console.log(values);
+  }); 
+  console.log('=============================================='); 
+  hobbies.forEach((values,index)=>{
+      console.log(values);  
+  });
+  hobbies.push('bikeriding','travelling');
+  console.log(hobbies);
+//   add element at last, return type is size
+  console.log('=============================================='); 
+  hobbies.pop();
+  console.log(hobbies.pop());
+  console.log(hobbies);
+//   remove element at last,return type is emoved element
+  console.log('=============================================='); 
+  hobbies.unshift('cooking','running');
+  console.log(hobbies);
+//   add element to first index, return type size
+  console.log('=============================================='); 
+  hobbies.shift('bikeriding');
+  console.log(hobbies);
+//   remove element from first index, return type is removed array
+hobbies.includes('bikeriding',2)
+console.log(hobbies.includes('bikeriding',2))
+console.log(hobbies);
+//check the element is pressent or not if yes returns true else returns false 
+console.log('===================================');
+hobbies.splice(2,0,'reading','swimming');
+console.log(hobbies.splice(2,0,'reading','swimming'));
+console.log(hobbies);
+console.log('===================================');
+ var arr = hobbies.slice(0,2);
+ console.log(arr);
+ console.log(hobbies);
+ console.log('===================================');
+var array= hobbies.join('-');
+ console.log(hobbies);
+ console.log(array);
+ console.log('===================================');
+var indexHobbies = hobbies.indexOf('coding');
+console.log(indexHobbies);
+console.log('===================================');
+var number = [10,20,30,40,50]
+var newnumber = number.map((val,index)=>{
+    val = val +10; 
+    return val;
+});
+console.log("new array " + newnumber);
+console.log("old array " + number);
+//
+console.log('===================================');
+var num1 = number.filter((val,index)=>{
+    return val>30;
+});
+console.log("new array " + num1);
+console.log("old array " + number);
+// 
+console.log('===================================');
+var item = [{
+    item:'pen',
+    price:50
+},
+{
+    item:'bag',
+    price:500
+},
+{
+    item:'laptop',
+    price:50000
+},
+{
+    item:'mouse',
+    price:500
+}
+]
+var newitem = item.map((val)=>{
+return val.price = val.price+10;
+});
+console.log('new array'+newitem);
+console.log('old array'+item);
+console.log('===================================');
+var newitem1 = item.filter((val)=>{
+return val.price>100&&val.item.length>3;
+});
+console.log(newitem1);
+console.log('===================================');
+
+
+
+
+
+
+   </script>
+</body>
+</html>
